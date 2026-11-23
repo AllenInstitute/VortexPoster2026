@@ -1,0 +1,7 @@
+﻿# The page itself needs only these. uild_assets.py additionally needs the
+# poster modules in ../poster and the parquet store, which are not pip-installable.
+pandas>=2.0
+numpy>=1.24
+plotly>=5.20
+ipykernel>=6
+nbformat>=5

@@ -1,0 +1,10 @@
+before,after,cells
+unproofread,none,3
+unproofread,axon_partially_extended,131
+unproofread,axon_fully_extended,204
+none,none,37
+axon_partially_extended,axon_partially_extended,438
+axon_partially_extended,axon_fully_extended,12
+axon_interareal,axon_interareal,120
+axon_interareal,axon_fully_extended,10
+axon_fully_extended,axon_fully_extended,35

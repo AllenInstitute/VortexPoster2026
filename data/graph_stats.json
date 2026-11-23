@@ -1,0 +1,14 @@
+{
+  "cells": 1329,
+  "connections": 82614,
+  "synapses": 152336,
+  "density": 0.046773911374495325,
+  "median_weight": 1.0,
+  "max_weight": 44,
+  "reciprocal_pairs": 10378,
+  "connected_pairs": 72236,
+  "reciprocal_fraction": 0.1436679771858907,
+  "reciprocal_chance": 0.023947003189687257,
+  "reciprocal_enrichment": 5.999413623820834,
+  "autapses": 0
+}

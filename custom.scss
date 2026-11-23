@@ -1,0 +1,72 @@
+/*-- scss:defaults --*/
+// The poster's own accent, so the page reads as the same object.
+$primary:        #00A59B !default;
+$link-color:     #00756E !default;
+$body-color:     #111111 !default;
+$font-size-root: 17px !default;
+
+/*-- scss:rules --*/
+
+// Panel headings carry the poster's section number in the accent, the way the
+// board does: "04" in teal, the name in ink.
+h2 {
+  border-bottom: 3px solid #00A59B;
+  padding-bottom: 0.25rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  color: #00756E;
+}
+
+// A caption sits under its figure and is meant to be read, not skimmed past,
+// so it gets body size rather than the theme's small grey.
+figcaption, .figure-caption {
+  font-size: 0.95rem;
+  color: #3d4448;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+
+// The headline numbers strip, mirroring the poster's.
+.statrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  margin: 1.5rem 0 2rem 0;
+}
+.stat {
+  flex: 1 1 10rem;
+}
+.stat .value {
+  display: block;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #00A59B;
+  line-height: 1.1;
+}
+.stat .label {
+  display: block;
+  font-size: 0.95rem;
+  color: #3d4448;
+}
+
+// A note that is the page's own voice rather than the poster's.
+.aside-note {
+  border-left: 4px solid #D4D9DB;
+  padding: 0.4rem 0 0.4rem 1rem;
+  margin: 1.2rem 0;
+  color: #3d4448;
+}
+
+// The exemplar gallery.
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.gallery figure { margin: 0; text-align: center; }
+.gallery img { width: 100%; height: auto; }
+.gallery figcaption { text-align: center; font-size: 0.85rem; }

@@ -1,0 +1,13 @@
+# Normalise text in the repository, check out native line endings.
+* text=auto
+
+# Notebooks and frozen Quarto output are text, but a line-ending change in
+# them is noise in a diff that is already hard to read.
+*.ipynb text eol=lf
+_freeze/** text eol=lf
+
+# Binary, so git neither converts them nor tries to diff them.
+*.png binary
+*.webp binary
+*.pdf binary
+*.jpg binary

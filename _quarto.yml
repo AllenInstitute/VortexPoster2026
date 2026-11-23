@@ -1,0 +1,61 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "A visual cortical column connectome"
+  description: >-
+    SfN 2026 poster, as a scrolling page: every panel, with captions and
+    interactive versions of the figures where turning a cell type on and off
+    tells you something.
+  site-url: "https://alleninstitute.github.io/VortexPoster2026/"
+  repo-url: "https://github.com/AllenInstitute/VortexPoster2026"
+  open-graph: true
+  navbar:
+    background: "#00A59B"
+    foreground: light
+    left:
+      - text: "Poster (PDF)"
+        href: sfn_2026_poster.pdf
+      - text: "MICrONS data"
+        href: "https://tutorial.microns-explorer.org"
+      - text: "VORTEX"
+        href: "https://www.microns-explorer.org/vortex"
+  page-footer:
+    background: light
+    center: >-
+      Allen Institute for Brain Science &middot; SfN 2026 &middot;
+      built from the poster notebooks with Quarto
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    toc: true
+    toc-depth: 3
+    toc-title: "Panels"
+    toc-location: left
+    number-sections: false
+    code-fold: true
+    code-summary: "Show the code for this figure"
+    code-tools: false
+    fig-align: center
+    # `auto` rather than `true`: every figure on the page becomes click-to-zoom,
+    # which is what a 1,329-cell adjacency matrix shrunk to 1,500 px needs as
+    # much as the exemplar gallery does. The gallery's images additionally
+    # carry `group="exemplars"`, so they open as one set with arrows between.
+    lightbox: auto
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
+
+execute:
+  # Quarto uses a notebook's *stored* outputs by default and does not run it.
+  # This page's figures are built in code, so without `enabled: true` the three
+  # interactive panels silently do not appear — the page renders cleanly with
+  # the prose and the static images and simply no plots.
+  enabled: true
+  freeze: auto
+  echo: true
+  warning: false
